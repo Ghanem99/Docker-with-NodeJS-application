@@ -19,6 +19,48 @@ npm i nodemon --save-dev
 // we can then run the command to update the server automatically: npm run start-dev
 
 
+// to build or run the docker file
+docker build -t image-name ./Dockerfile
+//or for simplicity
+docker build -t image-name .
+// End to build or run the docker file
+
+
+// to list all the images
+docker image ls 
+// End to list all the images
+
+
+// the image is the template to run many containers
+
+
+// to run a container from image and give it a name, -d "detach: to run and use the terminal"
+Syntax: docker run --name container-name -d  image-name
+Example: docker run --name express-node-app-container -d express-node-app
+// End to run 
+
+
+// to stop a container 
+docker stop container-name
+
+// to remove a container 
+docker rm container-name -f
+
+// to show the running containers 
+docker ps
+
+// the meaning of EXPOSE 2000: for documentation purposes
+// forwarding port: add -p 2000:2000
+docker build express-node-app-container -d -p 2000:20000 express-node-app
+
+
+
+
+
+
+
+
+
 
 
 

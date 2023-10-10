@@ -12,6 +12,15 @@ node index.js
 // to install it:
 npm i nodemon --save-dev
 
+// after we add the nodemon like below
+"scripts": {
+    "start" : "node index.js",
+    "start-dev" : "nodemon index.js"
+// we can then run the command to update the server automatically: npm run start-dev
+
+
+
+
 
 
 

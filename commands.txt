@@ -1,0 +1,18 @@
+// to create a node project
+npm init 
+
+// to install nodejs dependencies
+npm i express
+
+// to run the app
+node index.js
+
+// use nodemon: in order to listen to changes and update the server.
+
+// to install it:
+npm i nodemon --save-dev
+
+
+
+
+

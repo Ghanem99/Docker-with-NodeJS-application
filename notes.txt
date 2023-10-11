@@ -54,6 +54,10 @@ docker ps
 docker build express-node-app-container -d -p 2000:20000 express-node-app
 
 
+// to open terminal inside the container, -it to open (interactive terminal)  
+docker exec -it container-name bash
+
+
 
 
 

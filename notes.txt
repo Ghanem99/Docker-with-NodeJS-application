@@ -62,6 +62,13 @@ docker exec -it container-name bash
 instead of CMD ["npm", "start"] ----> CMD ["npm", "run", "start-dev"], then build a new image
 
 
+// to build image and run container after creating the docker-compose.yml
+docker-compose up -d 
+// to delete a container 
+docker-compose down
+
+
+
 
 
 

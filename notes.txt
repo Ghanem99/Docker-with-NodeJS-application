@@ -58,6 +58,11 @@ docker build express-node-app-container -d -p 2000:20000 express-node-app
 docker exec -it container-name bash
 
 
+// 
+instead of CMD ["npm", "start"] ----> CMD ["npm", "run", "start-dev"], then build a new image
+
+
+
 
 
 

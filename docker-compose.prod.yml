@@ -4,8 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        - NODE_ENV=production
+      target: production
     environment:
       - NODE_ENV=production
     command: ["npm", "start"]

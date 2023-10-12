@@ -7,7 +7,7 @@ const app = express();
 
 // create a route
 app.get('/', (req, res) => {
-    res.send('Hello!');
+    res.send('Hello Docker!');
 });
 
 // listen on port 3000

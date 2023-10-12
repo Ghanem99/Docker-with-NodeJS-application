@@ -67,6 +67,12 @@ docker-compose up -d
 // to delete a container 
 docker-compose down
 
+// instead of duplicating the command in docker-compose, we separate
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+
+
+// to build a new image 
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build 
 
 
 

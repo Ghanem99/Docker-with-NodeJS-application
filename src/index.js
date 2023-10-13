@@ -7,16 +7,16 @@ const PORT = process.env.PORT || 2000;
 const app = express();
 
 // connect to mongodb
-const DB_USER = root;
-const DB_PASSWORD = example;
+const DB_USER = 'root';
+const DB_PASSWORD = 'example';
 const DB_PORT = 27017;
 const DB_HOST = 'mongo';
 
 const URI = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}`;
-mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+mongoose
+    .connect(URI)
+    .then(() => console.log('connected to db...'))
+    .catch((err) =>console.log('failed to connect to db: ', err));
 
 // create a route
 app.get('/', (req, res) => {
